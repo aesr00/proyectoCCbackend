@@ -1,5 +1,5 @@
 [Unit]
-Description=<application-description>
+Description= un servicio de api para el manejo de personas
 Documentation=https://github.com/aesr00/proyectoCCbackend.git
 After=network.target
 
@@ -7,7 +7,7 @@ After=network.target
 Environment=PORT=3000
 Type=simple
 User=<linux-user>
-ExecStart=/usr/bin/node <node-entry-point-js-file-path>
+ExecStart=/usr/bin/node /opt/proyectoCCbackend/source/main.ts
 Restart=on-failure
 
 [Install]
