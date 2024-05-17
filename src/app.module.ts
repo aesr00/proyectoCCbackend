@@ -8,7 +8,6 @@ import { MongooseModule } from '@nestjs/mongoose';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: '.env',
       isGlobal: true,
     }),
     MongooseModule.forRoot('10.253.162.65:27017,10.253.162.50:27017,10.253.162.144:27017/?replicaSet=myReplicaSet'),
