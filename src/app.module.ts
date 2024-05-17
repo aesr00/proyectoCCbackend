@@ -11,7 +11,7 @@ import { MongooseModule } from '@nestjs/mongoose';
       envFilePath: '.env',
       isGlobal: true,
     }),
-    MongooseModule.forRoot(process.env.DB_URI),
+    MongooseModule.forRoot('10.253.162.65:27017,10.253.162.50:27017,10.253.162.144:27017/?replicaSet=myReplicaSet'),
     PersonaModule],
   controllers: [AppController],
   providers: [AppService],
